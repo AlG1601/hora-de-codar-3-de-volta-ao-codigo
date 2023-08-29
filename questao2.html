@@ -9,7 +9,8 @@
         function countdown(seconds) {
             if (seconds >= 0) {
                 if (seconds === 0) {
-                    document.write("EXPLOSÃO");
+                    document.write('EXPLOSÃO <link rel="stylesheet" href="style.css">');
+                    // fundo.style.backgroudColor = "#FF0F00";
                 } else {
                     document.write("A bomba vai explodir em " + seconds + " segundos.<br>");
                     setTimeout(function() {
@@ -19,11 +20,11 @@
             }
         }
 
-        countdown(30);
+        countdown(31);
 
     </script>
 </head>
-<body>
+<body class="fundo">
     
 </body>
 </html>
