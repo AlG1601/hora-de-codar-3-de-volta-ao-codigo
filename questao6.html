@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <script>
+        var alunos_aprovados = parseInt(0);
+        var media = parseFloat(media);
+
+        do {
+            var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+            var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+            
+            media = (nota1 + nota2) / 2;
+
+            document.write("A nota final do aluno é " + media + "<br>");
+            if (media >= 9.5) {
+                alunos_aprovados += 1;
+            }
+
+            var opcao = prompt("Calcular a média de outro aluno? Digite S para Sim e N para Não!");
+        }
+        while (opcao == "S" || opcao == "s");
+
+        document.write("Há " + alunos_aprovados + " alunos aprovados.");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
